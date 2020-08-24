@@ -44,7 +44,7 @@ angular.module('oppia').directive('oppiaNoninteractiveLink', [
               untrustedUrl = 'https://' + untrustedUrl;
             }
             ctrl.url = untrustedUrl;
-            ctrl.tooltipPosition = 'auto'
+            ctrl.tooltipPosition = 'auto';
             ctrl.showUrlInTooltip = false;
             ctrl.text = ctrl.url;
             if ($attrs.textWithValue) {
@@ -66,7 +66,7 @@ angular.module('oppia').directive('oppiaNoninteractiveLink', [
             // by tabbing while in Exploration Editor mode.
             // Also prevents tooltip from covering RTE components.
             if (ContextService.isInExplorationEditorMode()) {
-              ctrl.tooltipPosition = 'bottom'
+              ctrl.tooltipPosition = 'bottom';
               ctrl.tabIndexVal = -1;
             }
           };
